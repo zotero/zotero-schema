@@ -1,0 +1,16 @@
+#!/bin/sh
+file=schema.json.gz.etag
+tmp_file=$file-tmp
+
+curl --silent -I --compressed https://api.zotero.org/schema | sed -n -r 's/^ETag: (".+")\s+/\1/p' > $tmp_file
+
+DIFF=$(diff $file $tmp_file)
+if [ "$DIFF" != "" ]
+then
+        echo "$file updated"
+        mv $tmp_file $file
+	git diff
+else
+        echo "ETag hasn't changed"
+        rm $tmp_file
+fi
