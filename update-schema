@@ -1,0 +1,111 @@
+#!/usr/bin/env node
+
+// Update schema.json with current locale strings
+//
+// This should be run from the submodule in the zotero/zotero repo after
+// modifying types or fields or to make updated localized strings available to
+// web-library or other API consumers. (The client will still prefer bundled
+// locale files unless the schema saved to the DB is newer than the bundled one
+// due to an API fetch and/or a downgrade.)
+
+const path = require('path');
+const fs = require('fs');
+
+async function run() {
+	var clientDir = path.join(__dirname, '..', '..', '..');
+	if (!fs.existsSync(path.join(clientDir, 'chrome'))) {
+		console.error(`Not within a Zotero client directory`);
+		process.exitCode = 1;
+		return;
+	}
+	
+	var oldJSON = fs.readFileSync('schema.json').toString();
+	var data = JSON.parse(oldJSON);
+	var version = parseInt(data.version);
+	
+	// Sort item types
+	data.itemTypes.sort((a, b) => {
+		return a.itemType.localeCompare(b.itemType);
+	});
+	
+	// Regenerate locales
+	data.locales = {};
+	var itemTypes = data.itemTypes.map(x => x.itemType);
+	var fields = Array.from(new Set(data.itemTypes.map(x => x.fields).reduce((accumulator, currentValue) => {
+		return accumulator.concat(currentValue.map(x => x.field));
+	}, ['dateAdded', 'dateModified'])));
+	var creatorTypes = Array.from(new Set(data.itemTypes.map(x => x.creatorTypes).reduce((accumulator, currentValue) => {
+		return accumulator.concat(currentValue.map(x => x.creatorType));
+	}, [])));
+	var cmp = (a, b) => {
+		return a.localeCompare(b, 'en', { sensitivity: 'base' });
+	};
+	itemTypes.sort(cmp);
+	fields.sort(cmp);
+	creatorTypes.sort(cmp);
+	
+	var dirs = fs.readdirSync(path.join(clientDir, 'chrome', 'locale'));
+	for (let locale of dirs) {
+		if (!/^[a-z]{2}(-[A-Z]{2})?/.test(locale)) {
+			continue;
+		}
+		
+		data.locales[locale] = {
+			itemTypes: {},
+			fields: {},
+			creatorTypes: {}
+		};
+		
+		// Read in zotero.properties file for locale
+		let props = fs.readFileSync(
+			path.join(clientDir, 'chrome', 'locale', locale, 'zotero', 'zotero.properties')
+		);
+		let lines = props.toString().split(/\n/g);
+		let strings = new Map();
+		for (let line of lines) {
+			let [ key, str ] = line.split(/\s*=\s*/);
+			strings.set(key, str);
+		}
+		
+		data.locales[locale].itemTypes = getLocalizedStrings(locale, strings, 'itemTypes', itemTypes);
+		data.locales[locale].fields = getLocalizedStrings(locale, strings, 'itemFields', fields);
+		data.locales[locale].creatorTypes = getLocalizedStrings(locale, strings, 'creatorTypes', creatorTypes);
+	}
+	
+	// Write new file with incremented version
+	var newJSON = JSON.stringify(data, null, '\t') + "\n";
+	if (oldJSON != newJSON) {
+		console.log("Schema updated");
+		data.version = version + 1;
+		newJSON = JSON.stringify(data, null, '\t') + "\n"
+		fs.writeFileSync('schema.json', newJSON);
+	}
+	else {
+		console.log("Schema hasn't changed");
+	}
+}
+
+function getLocalizedStrings(locale, strings, prefix, subjects) {
+	var data = {};
+	for (let subject of subjects) {
+		let key = prefix + '.' + subject;
+		if (!strings.has(key)) {
+			// 'type' is only a base field, so it doesn't have a string
+			if (key == 'itemFields.type') {
+				continue;
+			}
+			throw new Error(`Localized string ${key} missing for ${locale}`);
+		}
+		data[subject] = strings.get(key);
+	}
+	return data;
+}
+
+(async function () {
+	try {
+		await run();
+	}
+	catch (e) {
+		console.error(e);
+	}
+})();
