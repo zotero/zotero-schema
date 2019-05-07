@@ -1,5 +1,5 @@
 {
-	"version": 1,
+	"version": 2,
 	"itemTypes": [
 		{
 			"itemType": "artwork",
@@ -2454,6 +2454,208 @@
 			]
 		}
 	],
+	"meta": {
+		"fields": {
+			"date": {
+				"type": "date"
+			},
+			"filingDate": {
+				"type": "date"
+			}
+		}
+	},
+	"csl": {
+		"types": {
+			"artwork": "graphic",
+			"attachment": "article",
+			"audioRecording": "song",
+			"bill": "bill",
+			"blogPost": "post-weblog",
+			"book": "book",
+			"bookSection": "chapter",
+			"case": "legal_case",
+			"computerProgram": "book",
+			"conferencePaper": "paper-conference",
+			"dictionaryEntry": "entry-dictionary",
+			"document": "article",
+			"email": "personal_communication",
+			"encyclopediaArticle": "entry-encyclopedia",
+			"film": "motion_picture",
+			"forumPost": "post",
+			"hearing": "bill",
+			"instantMessage": "personal_communication",
+			"interview": "interview",
+			"journalArticle": "article-journal",
+			"letter": "personal_communication",
+			"magazineArticle": "article-magazine",
+			"manuscript": "manuscript",
+			"map": "map",
+			"newspaperArticle": "article-newspaper",
+			"note": "article",
+			"patent": "patent",
+			"podcast": "broadcast",
+			"presentation": "speech",
+			"radioBroadcast": "broadcast",
+			"report": "report",
+			"statute": "legislation",
+			"thesis": "thesis",
+			"tvBroadcast": "broadcast",
+			"videoRecording": "motion_picture",
+			"webpage": "webpage"
+		},
+		"fields": {
+			"text": {
+				"abstract": [
+					"abstractNote"
+				],
+				"archive": [
+					"archive"
+				],
+				"archive_location": [
+					"archiveLocation"
+				],
+				"authority": [
+					"court",
+					"legislativeBody",
+					"issuingAuthority"
+				],
+				"call-number": [
+					"callNumber",
+					"applicationNumber"
+				],
+				"chapter-number": [
+					"session"
+				],
+				"collection-number": [
+					"seriesNumber"
+				],
+				"collection-title": [
+					"seriesTitle",
+					"series"
+				],
+				"container-title": [
+					"publicationTitle",
+					"reporter",
+					"code"
+				],
+				"dimensions": [
+					"artworkSize",
+					"runningTime"
+				],
+				"DOI": [
+					"DOI"
+				],
+				"edition": [
+					"edition"
+				],
+				"event": [
+					"meetingName",
+					"conferenceName"
+				],
+				"event-place": [
+					"place"
+				],
+				"genre": [
+					"type",
+					"programmingLanguage"
+				],
+				"ISBN": [
+					"ISBN"
+				],
+				"ISSN": [
+					"ISSN"
+				],
+				"issue": [
+					"issue",
+					"priorityNumbers"
+				],
+				"journalAbbreviation": [
+					"journalAbbreviation"
+				],
+				"language": [
+					"language"
+				],
+				"medium": [
+					"medium",
+					"system"
+				],
+				"note": [
+					"extra"
+				],
+				"number": [
+					"number"
+				],
+				"number-of-pages": [
+					"numPages"
+				],
+				"number-of-volumes": [
+					"numberOfVolumes"
+				],
+				"page": [
+					"pages"
+				],
+				"publisher": [
+					"publisher"
+				],
+				"publisher-place": [
+					"place"
+				],
+				"references": [
+					"history",
+					"references"
+				],
+				"scale": [
+					"scale"
+				],
+				"section": [
+					"section",
+					"committee"
+				],
+				"shortTitle": [
+					"shortTitle"
+				],
+				"source": [
+					"libraryCatalog"
+				],
+				"status": [
+					"legalStatus"
+				],
+				"title": [
+					"title"
+				],
+				"title-short": [
+					"shortTitle"
+				],
+				"URL": [
+					"url"
+				],
+				"version": [
+					"versionNumber"
+				],
+				"volume": [
+					"volume",
+					"codeNumber"
+				]
+			},
+			"date": {
+				"accessed": "accessDate",
+				"issued": "date",
+				"submitted": "filingDate"
+			}
+		},
+		"names": {
+			"author": "author",
+			"bookAuthor": "container-author",
+			"composer": "composer",
+			"director": "director",
+			"editor": "editor",
+			"interviewer": "interviewer",
+			"recipient": "recipient",
+			"reviewedAuthor": "reviewed-author",
+			"seriesEditor": "collection-editor",
+			"translator": "translator"
+		}
+	},
 	"locales": {
 		"af-ZA": {
 			"itemTypes": {
