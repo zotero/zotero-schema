@@ -33,7 +33,7 @@ async function run() {
 	var itemTypes = data.itemTypes.map(x => x.itemType);
 	var fields = Array.from(new Set(data.itemTypes.map(x => x.fields).reduce((accumulator, currentValue) => {
 		return accumulator.concat(currentValue.map(x => x.field));
-	}, ['dateAdded', 'dateModified'])));
+	}, ['itemType', 'dateAdded', 'dateModified'])));
 	var creatorTypes = Array.from(new Set(data.itemTypes.map(x => x.creatorTypes).reduce((accumulator, currentValue) => {
 		return accumulator.concat(currentValue.map(x => x.creatorType));
 	}, [])));
