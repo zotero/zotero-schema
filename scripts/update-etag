@@ -1,4 +1,8 @@
-#!/bin/sh
+#!/bin/bash
+
+dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+cd $dir/..
+
 file=schema.json.gz.etag
 tmp_file=$file-tmp
 
@@ -7,10 +11,10 @@ curl --silent -I --compressed https://api.zotero.org/schema | sed -n -r 's/^ETag
 DIFF=$(diff $file $tmp_file)
 if [ "$DIFF" != "" ]
 then
-        echo "$file updated"
-        mv $tmp_file $file
+	echo "$file updated"
+	mv $tmp_file $file
 	git diff
 else
-        echo "ETag hasn't changed"
-        rm $tmp_file
+	echo "ETag hasn't changed"
+	rm $tmp_file
 fi

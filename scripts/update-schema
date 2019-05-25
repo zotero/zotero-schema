@@ -12,7 +12,7 @@ const path = require('path');
 const fs = require('fs');
 
 async function run() {
-	var clientDir = path.join(__dirname, '..', '..', '..');
+	var clientDir = path.join(__dirname, '..', '..', '..', '..');
 	if (!fs.existsSync(path.join(clientDir, 'chrome'))) {
 		console.error(`Not within a Zotero client directory`);
 		process.exitCode = 1;
