@@ -1,5 +1,5 @@
 {
-	"version": 2,
+	"version": 3,
 	"itemTypes": [
 		{
 			"itemType": "artwork",
@@ -2466,42 +2466,96 @@
 	},
 	"csl": {
 		"types": {
-			"artwork": "graphic",
-			"attachment": "article",
-			"audioRecording": "song",
-			"bill": "bill",
-			"blogPost": "post-weblog",
-			"book": "book",
-			"bookSection": "chapter",
-			"case": "legal_case",
-			"computerProgram": "book",
-			"conferencePaper": "paper-conference",
-			"dictionaryEntry": "entry-dictionary",
-			"document": "article",
-			"email": "personal_communication",
-			"encyclopediaArticle": "entry-encyclopedia",
-			"film": "motion_picture",
-			"forumPost": "post",
-			"hearing": "bill",
-			"instantMessage": "personal_communication",
-			"interview": "interview",
-			"journalArticle": "article-journal",
-			"letter": "personal_communication",
-			"magazineArticle": "article-magazine",
-			"manuscript": "manuscript",
-			"map": "map",
-			"newspaperArticle": "article-newspaper",
-			"note": "article",
-			"patent": "patent",
-			"podcast": "broadcast",
-			"presentation": "speech",
-			"radioBroadcast": "broadcast",
-			"report": "report",
-			"statute": "legislation",
-			"thesis": "thesis",
-			"tvBroadcast": "broadcast",
-			"videoRecording": "motion_picture",
-			"webpage": "webpage"
+			"article": [
+				"document",
+				"attachment",
+				"note"
+			],
+			"article-journal": [
+				"journalArticle"
+			],
+			"article-magazine": [
+				"magazineArticle"
+			],
+			"article-newspaper": [
+				"newspaperArticle"
+			],
+			"bill": [
+				"bill",
+				"hearing"
+			],
+			"book": [
+				"book",
+				"computerProgram"
+			],
+			"broadcast": [
+				"tvBroadcast",
+				"podcast",
+				"radioBroadcast"
+			],
+			"chapter": [
+				"bookSection"
+			],
+			"entry-dictionary": [
+				"dictionaryEntry"
+			],
+			"entry-encyclopedia": [
+				"encyclopediaArticle"
+			],
+			"graphic": [
+				"artwork"
+			],
+			"interview": [
+				"interview"
+			],
+			"legal_case": [
+				"case"
+			],
+			"legislation": [
+				"statute"
+			],
+			"manuscript": [
+				"manuscript"
+			],
+			"map": [
+				"map"
+			],
+			"motion_picture": [
+				"film",
+				"videoRecording"
+			],
+			"paper-conference": [
+				"conferencePaper"
+			],
+			"patent": [
+				"patent"
+			],
+			"personal_communication": [
+				"letter",
+				"email",
+				"instantMessage"
+			],
+			"post": [
+				"forumPost"
+			],
+			"post-weblog": [
+				"blogPost"
+			],
+			"report": [
+				"report"
+			],
+			"song": [
+				"audioRecording"
+			],
+			"speech": [
+				"presentation"
+			],
+			"thesis": [
+				"thesis"
+			],
+			"webpage": [
+				"webpage"
+			]
 		},
 		"fields": {
 			"text": {
