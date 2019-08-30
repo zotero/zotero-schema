@@ -3,10 +3,7 @@
 // Update schema.json with current locale strings
 //
 // This should be run from the submodule in the zotero/zotero repo after
-// modifying types or fields or to make updated localized strings available to
-// web-library or other API consumers. (The client will still prefer bundled
-// locale files unless the schema saved to the DB is newer than the bundled one
-// due to an API fetch and/or a downgrade.)
+// modifying types, fields, or localized strings.
 
 const path = require('path');
 const fs = require('fs');
