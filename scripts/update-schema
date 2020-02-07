@@ -28,9 +28,17 @@ async function run() {
 	// Regenerate locales
 	data.locales = {};
 	var itemTypes = data.itemTypes.map(x => x.itemType);
-	var fields = Array.from(new Set(data.itemTypes.map(x => x.fields).reduce((accumulator, currentValue) => {
-		return accumulator.concat(currentValue.map(x => x.field));
-	}, ['itemType', 'dateAdded', 'dateModified'])));
+	var fields = Array.from(
+		new Set(data.itemTypes.map(x => x.fields).reduce((accumulator, currentValue) => {
+			return accumulator.concat(currentValue.map(x => x.field));
+		},
+		[
+			'itemType',
+			// Used as search condition
+			'number',
+			'dateAdded',
+			'dateModified'
+		])));
 	var creatorTypes = Array.from(new Set(data.itemTypes.map(x => x.creatorTypes).reduce((accumulator, currentValue) => {
 		return accumulator.concat(currentValue.map(x => x.creatorType));
 	}, [])));
