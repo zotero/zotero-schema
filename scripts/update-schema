@@ -25,7 +25,7 @@ async function run() {
 		return a.itemType.localeCompare(b.itemType);
 	});
 	
-	// Regenerate locales
+	// Regenerate localized strings using the files in chrome/locale
 	data.locales = {};
 	var itemTypes = data.itemTypes.map(x => x.itemType);
 	var fields = Array.from(
