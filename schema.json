@@ -1,5 +1,5 @@
 {
-	"version": 9,
+	"version": 10,
 	"itemTypes": [
 		{
 			"itemType": "artwork",
@@ -7527,7 +7527,7 @@
 				"book": "Knyga",
 				"bookSection": "Knygos skyrius",
 				"case": "Byla",
-				"computerProgram": "Kompiuterinė programa",
+				"computerProgram": "Programinė įranga",
 				"conferencePaper": "Pranešimas konferencijoje",
 				"dictionaryEntry": "Žodyno įrašas",
 				"document": "Dokumentas",
@@ -8595,7 +8595,7 @@
 				"book": "Livro",
 				"bookSection": "Seção de livro",
 				"case": "Caso",
-				"computerProgram": "Programa de computador",
+				"computerProgram": "Programa",
 				"conferencePaper": "Conferência",
 				"dictionaryEntry": "Verbete de dicionário",
 				"document": "Documento",
@@ -8876,7 +8876,7 @@
 				"presentationType": "Tipo",
 				"priorityNumbers": "Números de Prioridade",
 				"proceedingsTitle": "Título das Actas",
-				"programmingLanguage": "Linguagem",
+				"programmingLanguage": "Linguagem de Programação",
 				"programTitle": "Título do Programa",
 				"publicationTitle": "Publicação",
 				"publicLawNumber": "Número da Lei Pública",
@@ -9485,7 +9485,7 @@
 				"book": "Knjiga",
 				"bookSection": "Odsek knjige",
 				"case": "Primer",
-				"computerProgram": "Računalniški program",
+				"computerProgram": "Programje",
 				"conferencePaper": "Konferenčni članek",
 				"dictionaryEntry": "Slovarski vnos",
 				"document": "Dokument",
