@@ -1,5 +1,5 @@
 {
-	"version": 13,
+	"version": 14,
 	"itemTypes": [
 		{
 			"itemType": "annotation",
@@ -5761,7 +5761,7 @@
 		},
 		"gl-ES": {
 			"itemTypes": {
-				"annotation": "Annotation",
+				"annotation": "Anotación",
 				"artwork": "Arte",
 				"attachment": "Anexo",
 				"audioRecording": "Gravación de son",
@@ -8625,7 +8625,7 @@
 		},
 		"pt-BR": {
 			"itemTypes": {
-				"annotation": "Annotation",
+				"annotation": "Anotação",
 				"artwork": "Obra de arte",
 				"attachment": "Anexo",
 				"audioRecording": "Gravação de áudio",
@@ -9878,7 +9878,7 @@
 		},
 		"sv-SE": {
 			"itemTypes": {
-				"annotation": "Annotation",
+				"annotation": "Kommentar",
 				"artwork": "Konstverk",
 				"attachment": "Bilaga",
 				"audioRecording": "Ljudinspelning",
@@ -10751,7 +10751,7 @@
 				"contributor": "Cộng tác viên",
 				"cosponsor": "Cosponsor",
 				"counsel": "Nhà tư vấn",
-				"director": "Giám đốc",
+				"director": "Đạo diễn",
 				"editor": "Biên tập viên",
 				"guest": "Khách mời",
 				"interviewee": "Người được phỏng vấn",
