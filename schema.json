@@ -26,10 +26,16 @@
 					"field": "date"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
+				},
+				{
+					"field": "url"
+				},
+				{
+					"field": "accessDate"
 				},
 				{
 					"field": "archive"
@@ -38,16 +44,16 @@
 					"field": "archiveLocation"
 				},
 				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
+				},
+				{
 					"field": "libraryCatalog"
 				},
 				{
 					"field": "callNumber"
-				},
-				{
-					"field": "url"
-				},
-				{
-					"field": "accessDate"
 				},
 				{
 					"field": "rights"
@@ -117,13 +123,19 @@
 					"field": "runningTime"
 				},
 				{
-					"field": "language"
-				},
-				{
 					"field": "ISBN"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
+				},
+				{
+					"field": "url"
+				},
+				{
+					"field": "accessDate"
 				},
 				{
 					"field": "archive"
@@ -132,16 +144,16 @@
 					"field": "archiveLocation"
 				},
 				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
+				},
+				{
 					"field": "libraryCatalog"
 				},
 				{
 					"field": "callNumber"
-				},
-				{
-					"field": "url"
-				},
-				{
-					"field": "accessDate"
 				},
 				{
 					"field": "rights"
@@ -207,7 +219,10 @@
 					"field": "date"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -217,6 +232,9 @@
 				},
 				{
 					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -259,16 +277,25 @@
 					"field": "date"
 				},
 				{
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
+				},
+				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
 				},
 				{
-					"field": "language"
+					"field": "ISSN"
 				},
 				{
 					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -315,25 +342,34 @@
 					"field": "edition"
 				},
 				{
-					"field": "place"
+					"field": "date"
 				},
 				{
 					"field": "publisher"
 				},
 				{
-					"field": "date"
+					"field": "place"
+				},
+				{
+					"field": "originalDate"
+				},
+				{
+					"field": "originalPublisher"
+				},
+				{
+					"field": "originalPlace"
 				},
 				{
 					"field": "numPages"
 				},
 				{
-					"field": "language"
-				},
-				{
 					"field": "ISBN"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -342,10 +378,19 @@
 					"field": "accessDate"
 				},
 				{
+					"field": "ISSN"
+				},
+				{
 					"field": "archive"
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -408,25 +453,34 @@
 					"field": "edition"
 				},
 				{
-					"field": "place"
+					"field": "date"
 				},
 				{
 					"field": "publisher"
 				},
 				{
-					"field": "date"
+					"field": "place"
+				},
+				{
+					"field": "originalDate"
+				},
+				{
+					"field": "originalPublisher"
+				},
+				{
+					"field": "originalPlace"
 				},
 				{
 					"field": "pages"
 				},
 				{
-					"field": "language"
-				},
-				{
 					"field": "ISBN"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -435,10 +489,19 @@
 					"field": "accessDate"
 				},
 				{
+					"field": "ISSN"
+				},
+				{
 					"field": "archive"
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -512,16 +575,22 @@
 					"field": "history"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -575,16 +644,22 @@
 					"field": "programmingLanguage"
 				},
 				{
-					"field": "ISBN"
+					"field": "rights"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
 				},
 				{
-					"field": "rights"
+					"field": "accessDate"
+				},
+				{
+					"field": "DOI"
+				},
+				{
+					"field": "ISBN"
 				},
 				{
 					"field": "archive"
@@ -599,7 +674,7 @@
 					"field": "callNumber"
 				},
 				{
-					"field": "accessDate"
+					"field": "shortTitle"
 				},
 				{
 					"field": "extra"
@@ -650,16 +725,13 @@
 					"field": "series"
 				},
 				{
-					"field": "language"
-				},
-				{
 					"field": "DOI"
 				},
 				{
 					"field": "ISBN"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -668,10 +740,19 @@
 					"field": "accessDate"
 				},
 				{
+					"field": "ISSN"
+				},
+				{
 					"field": "archive"
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -827,13 +908,13 @@
 					"field": "pages"
 				},
 				{
-					"field": "language"
-				},
-				{
 					"field": "ISBN"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -846,6 +927,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -895,10 +982,10 @@
 					"field": "date"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -911,6 +998,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -958,13 +1051,19 @@
 					"field": "date"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "shortTitle"
 				},
 				{
 					"field": "language"
@@ -1033,7 +1132,10 @@
 					"field": "ISBN"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1042,13 +1144,16 @@
 					"field": "accessDate"
 				},
 				{
-					"field": "language"
-				},
-				{
 					"field": "archive"
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -1110,10 +1215,10 @@
 					"field": "runningTime"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1126,6 +1231,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -1177,16 +1288,22 @@
 					"field": "date"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -1247,16 +1364,22 @@
 					"field": "date"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -1285,16 +1408,22 @@
 					"field": "date"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -1333,10 +1462,10 @@
 					"baseField": "medium"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1349,6 +1478,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -1392,16 +1527,25 @@
 					"field": "publicationTitle"
 				},
 				{
+					"field": "date"
+				},
+				{
 					"field": "volume"
 				},
 				{
 					"field": "issue"
 				},
 				{
-					"field": "pages"
+					"field": "section"
 				},
 				{
-					"field": "date"
+					"field": "partNumber"
+				},
+				{
+					"field": "partTitle"
+				},
+				{
+					"field": "pages"
 				},
 				{
 					"field": "series"
@@ -1416,16 +1560,10 @@
 					"field": "journalAbbreviation"
 				},
 				{
-					"field": "language"
-				},
-				{
 					"field": "DOI"
 				},
 				{
-					"field": "ISSN"
-				},
-				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1434,10 +1572,28 @@
 					"field": "accessDate"
 				},
 				{
+					"field": "PMID"
+				},
+				{
+					"field": "PMCID"
+				},
+				{
+					"field": "arXiv ID"
+				},
+				{
+					"field": "ISSN"
+				},
+				{
 					"field": "archive"
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -1488,10 +1644,10 @@
 					"field": "date"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1504,6 +1660,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -1556,13 +1718,13 @@
 					"field": "pages"
 				},
 				{
-					"field": "language"
-				},
-				{
 					"field": "ISSN"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1575,6 +1737,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -1628,10 +1796,10 @@
 					"field": "numPages"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1644,6 +1812,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -1703,13 +1877,13 @@
 					"field": "date"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
 					"field": "ISBN"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1722,6 +1896,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -1777,13 +1957,13 @@
 					"field": "pages"
 				},
 				{
-					"field": "language"
-				},
-				{
-					"field": "shortTitle"
-				},
-				{
 					"field": "ISSN"
+				},
+				{
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1796,6 +1976,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -1874,6 +2060,10 @@
 					"baseField": "date"
 				},
 				{
+					"field": "priorityDate",
+					"baseField": "originalDate"
+				},
+				{
 					"field": "references"
 				},
 				{
@@ -1881,16 +2071,22 @@
 					"baseField": "status"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -1939,16 +2135,22 @@
 					"field": "runningTime"
 				},
 				{
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
+				},
+				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
 				},
 				{
-					"field": "language"
+					"field": "shortTitle"
 				},
 				{
-					"field": "shortTitle"
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -2082,16 +2284,22 @@
 					"field": "meetingName"
 				},
 				{
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
+				},
+				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
 				},
 				{
-					"field": "language"
+					"field": "shortTitle"
 				},
 				{
-					"field": "shortTitle"
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -2145,10 +2353,10 @@
 					"field": "runningTime"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -2161,6 +2369,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -2231,10 +2445,10 @@
 					"field": "pages"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -2243,10 +2457,19 @@
 					"field": "accessDate"
 				},
 				{
+					"field": "ISSN"
+				},
+				{
 					"field": "archive"
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -2401,16 +2624,22 @@
 					"field": "history"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -2456,10 +2685,10 @@
 					"field": "numPages"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -2468,10 +2697,19 @@
 					"field": "accessDate"
 				},
 				{
+					"field": "ISSN"
+				},
+				{
 					"field": "archive"
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -2531,10 +2769,10 @@
 					"field": "runningTime"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -2547,6 +2785,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -2619,13 +2863,13 @@
 					"field": "runningTime"
 				},
 				{
-					"field": "language"
-				},
-				{
 					"field": "ISBN"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -2638,6 +2882,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -2692,13 +2942,19 @@
 					"field": "date"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "shortTitle"
 				},
 				{
 					"field": "language"
@@ -2929,8 +3185,20 @@
 				"number-of-volumes": [
 					"numberOfVolumes"
 				],
+				"part-number": [
+					"partNumber"
+				],
+				"part-title": [
+					"partTitle"
+				],
 				"page": [
 					"pages"
+				],
+				"PMID": [
+					"PMID"
+				],
+				"PMCID": [
+					"PMCID"
 				],
 				"publisher": [
 					"publisher"
