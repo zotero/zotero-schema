@@ -1882,6 +1882,94 @@
 			]
 		},
 		{
+			"itemType": "preprint",
+			"fields": [
+				{
+					"field": "title"
+				},
+				{
+					"field": "abstractNote"
+				},
+				{
+					"field": "genre",
+					"baseField": "type"
+				},
+				{
+					"field": "repository",
+					"baseField": "publisher"
+				},
+				{
+					"field": "archiveID"
+				},
+				{
+					"field": "place"
+				},
+				{
+					"field": "date"
+				},
+				{
+					"field": "series"
+				},
+				{
+					"field": "seriesNumber"
+				},
+				{
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
+				},
+				{
+					"field": "url"
+				},
+				{
+					"field": "accessDate"
+				},
+				{
+					"field": "archive"
+				},
+				{
+					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
+				},
+				{
+					"field": "libraryCatalog"
+				},
+				{
+					"field": "callNumber"
+				},
+				{
+					"field": "rights"
+				},
+				{
+					"field": "extra"
+				}
+			],
+			"creatorTypes": [
+				{
+					"creatorType": "author",
+					"primary": true
+				},
+				{
+					"creatorType": "contributor"
+				},
+				{
+					"creatorType": "editor"
+				},
+				{
+					"creatorType": "translator"
+				},
+				{
+					"creatorType": "reviewedAuthor"
+				}
+			]
+		},
+		{
 			"itemType": "presentation",
 			"fields": [
 				{
@@ -2472,9 +2560,7 @@
 	"csl": {
 		"types": {
 			"article": [
-				"document",
-				"attachment",
-				"note"
+				"preprint"
 			],
 			"article-journal": [
 				"journalArticle"
@@ -2500,6 +2586,11 @@
 			],
 			"chapter": [
 				"bookSection"
+			],
+			"document": [
+				"document",
+				"attachment",
+				"note"
 			],
 			"entry-dictionary": [
 				"dictionaryEntry"
@@ -2642,7 +2733,8 @@
 					"extra"
 				],
 				"number": [
-					"number"
+					"number",
+					"archive_id"
 				],
 				"number-of-pages": [
 					"numPages"
