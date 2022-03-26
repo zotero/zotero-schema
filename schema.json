@@ -1,5 +1,5 @@
 {
-	"version": 15,
+	"version": 16,
 	"itemTypes": [
 		{
 			"itemType": "annotation",
@@ -1899,7 +1899,8 @@
 					"baseField": "publisher"
 				},
 				{
-					"field": "archiveID"
+					"field": "archiveID",
+					"baseField": "number"
 				},
 				{
 					"field": "place"
