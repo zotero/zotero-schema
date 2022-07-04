@@ -1,5 +1,5 @@
 {
-	"version": 16,
+	"version": 17,
 	"itemTypes": [
 		{
 			"itemType": "annotation",
@@ -2573,12 +2573,10 @@
 				"newspaperArticle"
 			],
 			"bill": [
-				"bill",
-				"hearing"
+				"bill"
 			],
 			"book": [
-				"book",
-				"computerProgram"
+				"book"
 			],
 			"broadcast": [
 				"podcast",
@@ -2601,6 +2599,9 @@
 			],
 			"graphic": [
 				"artwork"
+			],
+			"hearing": [
+				"hearing"
 			],
 			"interview": [
 				"interview"
@@ -2640,6 +2641,9 @@
 			],
 			"report": [
 				"report"
+			],
+			"software": [
+				"computerProgram"
 			],
 			"song": [
 				"audioRecording"
@@ -2699,12 +2703,12 @@
 				"edition": [
 					"edition"
 				],
-				"event": [
-					"meetingName",
-					"conferenceName"
-				],
 				"event-place": [
 					"place"
+				],
+				"event-title": [
+					"meetingName",
+					"conferenceName"
 				],
 				"genre": [
 					"type",
@@ -2725,6 +2729,9 @@
 				],
 				"language": [
 					"language"
+				],
+				"license": [
+					"rights"
 				],
 				"medium": [
 					"medium",
@@ -2798,12 +2805,17 @@
 			"author": "author",
 			"bookAuthor": "container-author",
 			"composer": "composer",
+			"contributor": "contributor",
 			"director": "director",
 			"editor": "editor",
+			"guest": "guest",
 			"interviewer": "interviewer",
+			"performer": "performer",
+			"producer": "producer",
 			"recipient": "recipient",
 			"reviewedAuthor": "reviewed-author",
 			"seriesEditor": "collection-editor",
+			"scriptwriter": "script-writer",
 			"translator": "translator"
 		}
 	},
