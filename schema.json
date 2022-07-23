@@ -1,5 +1,5 @@
 {
-	"version": 18,
+	"version": 19,
 	"itemTypes": [
 		{
 			"itemType": "annotation",
@@ -2804,13 +2804,13 @@
 		"names": {
 			"author": "author",
 			"bookAuthor": "container-author",
+			"castMember": "performer",
 			"composer": "composer",
 			"contributor": "contributor",
 			"director": "director",
 			"editor": "editor",
 			"guest": "guest",
 			"interviewer": "interviewer",
-			"performer": "performer",
 			"producer": "producer",
 			"recipient": "recipient",
 			"reviewedAuthor": "reviewed-author",
