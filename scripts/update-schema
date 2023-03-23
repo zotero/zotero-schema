@@ -80,6 +80,7 @@ async function run() {
 		let strings = new Map();
 		for (let line of lines) {
 			let [ key, str ] = line.split(/\s*=\s*/);
+			if (!key) continue;
 			strings.set(key, str);
 		}
 		
