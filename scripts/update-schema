@@ -1,9 +1,13 @@
 #!/usr/bin/env node
 
-// Update schema.json with current locale strings
+// Update schema.json with locale strings from zotero.properties for the types and fields defined
+// in schema.json
 //
-// This should be run from the submodule in the zotero/zotero repo after
-// modifying types, fields, or localized strings.
+// This is generally run automatically by locale/run from the zotero-build repo.
+//
+// To add a new type or field, add it to schema.json, add the English string to zotero.properties,
+// and run locale/run, which merges English strings, pulls translations from Transifex, and runs
+// this script.
 
 const path = require('path');
 const fs = require('fs');
@@ -106,7 +110,9 @@ function getLocalizedStrings(locale, strings, prefix, subjects) {
 			if (key == 'itemFields.type') {
 				continue;
 			}
-			throw new Error(`Localized string ${key} missing for ${locale}`);
+			throw new Error(`Localized string ${key} missing for ${locale}. `
+				+ "Did you update the en-US zotero.properties with new types and fields "
+				+ "and merge the new English strings?\n");
 		}
 		data[subject] = strings.get(key);
 	}
