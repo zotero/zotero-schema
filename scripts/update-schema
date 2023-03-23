@@ -40,8 +40,6 @@ async function run() {
 				},
 				[
 					'itemType',
-					// Only a base field
-					'authority',
 					// Used as search condition
 					'number',
 					'dateAdded',
