@@ -40,7 +40,9 @@ async function run() {
 				},
 				[
 					'itemType',
-					// Used as search condition
+					// Base or primary fields used as search conditions
+					'authority',
+					'medium',
 					'number',
 					'dateAdded',
 					'dateModified'
