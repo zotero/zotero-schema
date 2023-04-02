@@ -1,5 +1,5 @@
 {
-	"version": 24,
+	"version": 25,
 	"itemTypes": [
 		{
 			"itemType": "annotation",
@@ -2761,6 +2761,9 @@
 			"chapter": [
 				"bookSection"
 			],
+			"dataset": [
+				"dataset"
+			],
 			"document": [
 				"document",
 				"attachment",
@@ -2825,6 +2828,9 @@
 			],
 			"speech": [
 				"presentation"
+			],
+			"standard": [
+				"standard"
 			],
 			"thesis": [
 				"thesis"
