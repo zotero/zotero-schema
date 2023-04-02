@@ -194,7 +194,8 @@
 					"baseField": "pages"
 				},
 				{
-					"field": "legislativeBody"
+					"field": "legislativeBody",
+					"baseField": "authority"
 				},
 				{
 					"field": "session"
