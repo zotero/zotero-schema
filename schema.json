@@ -722,9 +722,6 @@
 					"field": "type"
 				},
 				{
-					"field": "number"
-				},
-				{
 					"field": "versionNumber"
 				},
 				{
