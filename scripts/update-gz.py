@@ -55,7 +55,7 @@ def locale_sort_key(a):
 # For every country code, sort locale candidates and add rule to htacecss
 for country_code in htaccess_mapings.keys():
     htaccess_mapings[country_code].sort(key=locale_sort_key)
-    htaccess_rules += f'\nRewriteRule ^schema/{country_code} /zotero-schema/locales/{htaccess_mapings[country_code][0]}.gz [L]'  
+    htaccess_rules += f'\nRewriteRule ^schema/{country_code}(-.*)?$ /zotero-schema/locales/{htaccess_mapings[country_code][0]}.gz [L]'  
 
 # Catch all for default schema with all locales
 htaccess_rules += f'\nRewriteRule ^schema/* /zotero-schema/schema.json.gz [L]' 
