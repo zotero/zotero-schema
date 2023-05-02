@@ -46,16 +46,6 @@ for locale_name in schema['locales'].keys():
         f_out.write(json_bytes)
 
 
-# Check if the gzip file exists, create it if not
-if not os.path.exists(gzipped_file):
-    with open(schema_file, 'rb') as f_in, gzip.open(gzipped_file, 'wb') as f_out:
-        shutil.copyfileobj(f_in, f_out)
-
-with gzip.open(gzipped_file, mode='r') as f:
-    gzip_schema = f.read()
-
-# # Compare the json of gzip file with the current schema json
-if json.dumps(json.loads(gzip_schema)) != json.dumps(json.loads(schema_text)):
-    print(f'{gzipped_file} updated')
-else:
-    print('Schema hasn\'t changed')
+# Create gzip for the main schema
+with open(schema_file, 'rb') as f_in, gzip.open(gzipped_file, 'wb') as f_out:
+    shutil.copyfileobj(f_in, f_out)
