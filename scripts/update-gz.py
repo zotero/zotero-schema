@@ -20,7 +20,9 @@ if os.path.exists(locales_folder):
 os.mkdir(locales_folder)
 
 # String that accumulates the rules to paste into htaccess
-htaccess_rules = f"RewriteRule ^schema/({'|'.join(schema['locales'].keys())})$ /zotero-schema/locales/$1.gz [L]"
+htaccess_rules = f'''RewriteCond %{{QUERY_STRING}} (?:^|&)locale=({'|'.join(schema['locales'].keys())})(?:&|$)
+RewriteRule ^schema(/.*)?$ /zotero-schema/locales/%1.json.gz [L,QSD]
+'''
 #Dict to collect country codes with locales to handle multiple locales per country code
 htaccess_mapings = {}
 
@@ -52,15 +54,19 @@ def locale_sort_key(a):
         return 'A'
     return a[3:5]
 
+
 # For every country code, sort locale candidates and add rule to htacecss
 for country_code in htaccess_mapings.keys():
     htaccess_mapings[country_code].sort(key=locale_sort_key)
-    htaccess_rules += f'\nRewriteRule ^schema/{country_code}(-.*)?$ /zotero-schema/locales/{htaccess_mapings[country_code][0]}.gz [L]'  
+    htaccess_rules += f'''
+RewriteCond %{{QUERY_STRING}} (?:^|&)locale=({country_code}(-.*)?)(?:&|$)
+RewriteRule ^schema(/.*)?$ /zotero-schema/locales/{htaccess_mapings[country_code][0]}.gz [L,QSD]
+'''
 
 # Catch all for default schema with all locales
-htaccess_rules += f'\nRewriteRule ^schema/* /zotero-schema/schema.json.gz [L]' 
+htaccess_rules += f'\nRewriteRule ^schema$ /zotero-schema/schema.json.gz [L,QSD]' 
 
-print("--- .htacess rules --- \n" + htaccess_rules + "\n---  ---")
+print(htaccess_rules)
 
 
 # Create gzip for the main schema
