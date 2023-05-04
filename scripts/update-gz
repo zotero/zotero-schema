@@ -21,7 +21,7 @@ if os.path.exists(locales_folder):
 os.mkdir(locales_folder)
 
 # Begin by checking if gzip is supported. If not - return schema.json
-htaccess_rules = f'''RewriteCond %{{REQUEST_URI}} !^/schema 
+htaccess_rules = f'''RewriteCond %{{REQUEST_URI}} !^/(schema|zotero-schema) 
 RewriteRule ".?" "-" [S=LINES_TO_SKIP]
 RewriteCond %{{HTTP:Accept-Encoding}} !gzip
 RewriteRule ^schema(/.*)?$ /zotero-schema/schema.json [QSD,L]
