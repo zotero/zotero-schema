@@ -21,7 +21,9 @@ if os.path.exists(locales_folder):
 os.mkdir(locales_folder)
 
 # Begin by checking if gzip is supported. If not - return schema.json
-htaccess_rules = f'''RewriteCond %{{HTTP:Accept-Encoding}} !gzip
+htaccess_rules = f'''RewriteCond %{{REQUEST_URI}} !^/schema 
+RewriteRule ".?" "-" [S=LINES_TO_SKIP]
+RewriteCond %{{HTTP:Accept-Encoding}} !gzip
 RewriteRule ^schema(/.*)?$ /zotero-schema/schema.json [QSD,L]
 RewriteCond %{{QUERY_STRING}} (?:^|&)locale=({'|'.join(schema['locales'].keys())})(?:&|$)
 RewriteRule ^schema(/.*)?$ /zotero-schema/locales/%1.json.gz [QSD]
@@ -84,6 +86,7 @@ htaccess_rules += f'''
   Header set Access-Control-Allow-Origin "*"
 </FilesMatch>'''
 
+htaccess_rules = htaccess_rules.replace("LINES_TO_SKIP", str(len(htaccess_rules.split('RewriteRule'))-2))
 print(htaccess_rules)
 
 
