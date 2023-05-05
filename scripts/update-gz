@@ -21,8 +21,8 @@ if os.path.exists(locales_folder):
 os.mkdir(locales_folder)
 
 # Begin by checking if gzip is supported. If not - return schema.json
-htaccess_rules = f'''RewriteCond %{{REQUEST_URI}} !^/(schema|zotero-schema) 
-RewriteRule ".?" "-" [S=LINES_TO_SKIP]
+htaccess_rules = f'''RewriteCond %{{REQUEST_URI}} !^/schema 
+RewriteRule ".?" "-" [S=LINES_TO_SKIP,L]
 RewriteCond %{{HTTP:Accept-Encoding}} !gzip
 RewriteRule ^schema(/.*)?$ /zotero-schema/schema.json [QSD,L]
 RewriteCond %{{QUERY_STRING}} (?:^|&)locale=({'|'.join(schema['locales'].keys())})(?:&|$)
@@ -65,21 +65,21 @@ for country_code in htaccess_mapings.keys():
     htaccess_mapings[country_code].sort(key=locale_sort_key)
     # Each rule is only applid is gzip encoding is accepted
     htaccess_rules += f'''RewriteCond %{{QUERY_STRING}} (?:^|&)locale=({country_code}(-.*)?)(?:&|$)
-RewriteRule ^schema(/.*)?$ /zotero-schema/locales/{htaccess_mapings[country_code][0]}.json.gz [QSD]
+RewriteRule ^schema(/.*)?$ /zotero-schema/locales/{htaccess_mapings[country_code][0]}.json.gz [QSD,L]
 '''
 
 # Catch all for default schema with all locales
-htaccess_rules += '''RewriteRule ^schema$ /zotero-schema/schema.json.gz [QSD]'''
+htaccess_rules += '''RewriteRule ^schema$ /zotero-schema/schema.json.gz [QSD,L]'''
 
-#Rules to serve correct content type and prevent double gzip matching all locales
-htaccess_rules += '''
-RewriteRule ^zotero-schema/schema\.json.gz$ - [T=application/json,E=no-gzip:1]
-RewriteRule ^zotero-schema/locales/.*\.json.gz$ - [T=application/json,E=no-gzip:1]'''
 
 htaccess_rules += f'''
 <FilesMatch \"(schema|{'|'.join(schema['locales'].keys())})\.json\.gz$\">
   # Serve correct encoding type
   Header append Content-Encoding gzip
+  # Set correct content type
+  Header set Content-Type application/json
+  # Prevent double-gzip
+  SetEnv no-gzip 1
   # Force proxies to cache gzipped & non-gzipped schema file separately
   Header append Vary Accept-Encoding
   # CORS
