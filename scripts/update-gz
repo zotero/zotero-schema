@@ -26,7 +26,7 @@ RewriteRule ".?" "-" [S=LINES_TO_SKIP]
 RewriteCond %{{HTTP:Accept-Encoding}} !gzip
 RewriteRule ^schema(/.*)?$ /zotero-schema/schema.json [QSD,L]
 RewriteCond %{{QUERY_STRING}} (?:^|&)locale=({'|'.join(schema['locales'].keys())})(?:&|$)
-RewriteRule ^schema(/.*)?$ /zotero-schema/locales/%1.json.gz [QSD]
+RewriteRule ^schema(/.*)?$ /zotero-schema/locales/%1.json.gz [QSD,L]
 '''
 #Dict to collect country codes with locales to handle multiple locales per country code
 htaccess_mapings = {}
@@ -63,7 +63,7 @@ def locale_sort_key(a):
 # For every country code, sort locale candidates and add rule to htacecss
 for country_code in htaccess_mapings.keys():
     htaccess_mapings[country_code].sort(key=locale_sort_key)
-    # Each rule is only applid is gzip encoding is accepted
+    # Each rule is only applied if gzip encoding is accepted
     htaccess_rules += f'''RewriteCond %{{QUERY_STRING}} (?:^|&)locale=({country_code}(-.*)?)(?:&|$)
 RewriteRule ^schema(/.*)?$ /zotero-schema/locales/{htaccess_mapings[country_code][0]}.json.gz [QSD,L]
 '''
