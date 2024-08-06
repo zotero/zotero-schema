@@ -1,5 +1,5 @@
 {
-	"version": 30,
+	"version": 31,
 	"itemTypes": [
 		{
 			"itemType": "annotation",
@@ -6198,7 +6198,7 @@
 				"meetingName": "Intitulé de la réunion",
 				"nameOfAct": "Nom de l'acte",
 				"network": "Réseau",
-				"number": "Numéro",
+				"number": "Numéro identifiant",
 				"numberOfVolumes": "Nb de volumes",
 				"numPages": "Nb de pages",
 				"organization": "Organisation",
