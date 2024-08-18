@@ -1,5 +1,5 @@
 {
-	"version": 31,
+	"version": 32,
 	"itemTypes": [
 		{
 			"itemType": "annotation",
@@ -4462,7 +4462,7 @@
 				"nameOfAct": "Name des Erlasses",
 				"network": "Netzwerk",
 				"number": "Nummer",
-				"numberOfVolumes": "# von Bänden",
+				"numberOfVolumes": "Anzahl der Bände",
 				"numPages": "Anzahl der Seiten",
 				"organization": "Organisation",
 				"pages": "Seiten",
@@ -8596,7 +8596,7 @@
 		},
 		"nb-NO": {
 			"itemTypes": {
-				"annotation": "Merknad",
+				"annotation": "Markering",
 				"artwork": "Kunstverk",
 				"attachment": "Vedlegg",
 				"audioRecording": "Lydopptak",
