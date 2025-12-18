@@ -2991,6 +2991,7 @@
 			"editor": "editor",
 			"guest": "guest",
 			"interviewer": "interviewer",
+			"podcaster": "host",
 			"producer": "producer",
 			"recipient": "recipient",
 			"reviewedAuthor": "reviewed-author",
