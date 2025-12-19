@@ -123,9 +123,6 @@
 					"field": "date"
 				},
 				{
-					"field": "eventPlace"
-				},
-				{
 					"field": "runningTime"
 				},
 				{
@@ -740,9 +737,6 @@
 				},
 				{
 					"field": "date"
-				},
-				{
-					"field": "eventPlace"
 				},
 				{
 					"field": "volume"
@@ -1524,9 +1518,6 @@
 					"field": "place"
 				},
 				{
-					"field": "eventPlace"
-				},
-				{
 					"field": "DOI"
 				},
 				{
@@ -2039,9 +2030,6 @@
 				},
 				{
 					"field": "date"
-				},
-				{
-					"field": "eventPlace"
 				},
 				{
 					"field": "volume"
@@ -2599,13 +2587,13 @@
 					"field": "date"
 				},
 				{
-					"field": "series"
+					"field": "seriesTitle"
 				},
 				{
 					"field": "seriesNumber"
 				},
 				{
-					"field": "numPages"
+					"field": "pages"
 				},
 				{
 					"field": "DOI"
@@ -3053,9 +3041,6 @@
 					"field": "date"
 				},
 				{
-					"field": "eventPlace"
-				},
-				{
 					"field": "runningTime"
 				},
 				{
@@ -3501,34 +3486,6 @@
 			"scriptwriter": "script-writer",
 			"translator": "translator"
 		}
-	},
-	"migrations": {
-		"15": [
-			{
-				"op": "move-value",
-				"itemType": "hearing",
-				"oldField": "place",
-				"newField": "eventPlace"
-			},
-			{
-				"op": "move-value",
-				"itemType": "presentation",
-				"oldField": "place",
-				"newField": "eventPlace"
-			},
-			{
-				"op": "move-value",
-				"itemType": "report",
-				"oldField": "pages",
-				"newField": "numPages"
-			},
-			{
-				"op": "move-value",
-				"itemType": "report",
-				"oldField": "seriesTitle",
-				"newField": "series"
-			}
-		]
 	},
 	"locales": {
 		"af-ZA": {
