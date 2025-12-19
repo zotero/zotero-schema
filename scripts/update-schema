@@ -60,6 +60,23 @@ async function run() {
 	fields.sort(cmp);
 	creatorTypes.sort(cmp);
 	
+	// Read in en-US schema.ftl file for newer strings
+	let englishProps = fs.readFileSync(
+		path.join(clientDir, 'chrome', 'locale', 'en-US', 'zotero', 'schema.ftl')
+	);
+	let englishLines = englishProps.toString().split(/\n/g);
+	let englishStrings = new Map();
+	for (let line of englishLines) {
+		if (!/^[^-].+\s*=\s*.+/.test(line)) continue;
+		let [ key, str ] = line.split(/\s*=\s*/);
+		if (!key) continue;
+		
+		// Change to use period separator like zotero.properties
+		key = key.replace('-', '.')
+		
+		englishStrings.set(key, str);
+	}
+	
 	var dirs = fs.readdirSync(path.join(clientDir, 'chrome', 'locale'));
 	for (let locale of dirs) {
 		if (!/^[a-z]{2}(-[A-Z]{2})?/.test(locale)) {
@@ -77,10 +94,32 @@ async function run() {
 			path.join(clientDir, 'chrome', 'locale', locale, 'zotero', 'zotero.properties')
 		);
 		let lines = props.toString().split(/\n/g);
-		let strings = new Map();
+		let strings = new Map(englishStrings);
 		for (let line of lines) {
 			let [ key, str ] = line.split(/\s*=\s*/);
 			if (!key) continue;
+			strings.set(key, str);
+		}
+		
+		// Read in schema.ftl file (newer strings)
+		try {
+			props = fs.readFileSync(
+				path.join(clientDir, 'chrome', 'locale', locale, 'zotero', 'schema.ftl')
+			);
+		}
+		catch (e) {
+			console.log(`schema.ftl not found for ${locale} -- using English strings`);
+			props = "";
+		}
+		lines = props.toString().split(/\n/g);
+		for (let line of lines) {
+			if (!/^[^-].+\s*=\s*.+/.test(line)) continue;
+			let [ key, str ] = line.split(/\s*=\s*/);
+			if (!key) continue;
+			
+			// Change to use period separator like zotero.properties
+			key = key.replace('-', '.')
+			
 			strings.set(key, str);
 		}
 		
@@ -115,7 +154,7 @@ function getLocalizedStrings(locale, strings, prefix, subjects) {
 				+ "Did you update the en-US zotero.properties with new types and fields "
 				+ "and merge the new English strings?\n");
 		}
-		data[subject] = strings.get(key);
+		data[subject] = value;
 	}
 	return data;
 }
