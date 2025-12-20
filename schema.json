@@ -26,10 +26,19 @@
 					"field": "date"
 				},
 				{
-					"field": "language"
+					"field": "eventPlace"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
+				},
+				{
+					"field": "url"
+				},
+				{
+					"field": "accessDate"
 				},
 				{
 					"field": "archive"
@@ -38,16 +47,16 @@
 					"field": "archiveLocation"
 				},
 				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
+				},
+				{
 					"field": "libraryCatalog"
 				},
 				{
 					"field": "callNumber"
-				},
-				{
-					"field": "url"
-				},
-				{
-					"field": "accessDate"
 				},
 				{
 					"field": "rights"
@@ -104,11 +113,11 @@
 					"field": "numberOfVolumes"
 				},
 				{
-					"field": "place"
-				},
-				{
 					"field": "label",
 					"baseField": "publisher"
+				},
+				{
+					"field": "place"
 				},
 				{
 					"field": "date"
@@ -117,13 +126,19 @@
 					"field": "runningTime"
 				},
 				{
-					"field": "language"
-				},
-				{
 					"field": "ISBN"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
+				},
+				{
+					"field": "url"
+				},
+				{
+					"field": "accessDate"
 				},
 				{
 					"field": "archive"
@@ -132,16 +147,16 @@
 					"field": "archiveLocation"
 				},
 				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
+				},
+				{
 					"field": "libraryCatalog"
 				},
 				{
 					"field": "callNumber"
-				},
-				{
-					"field": "url"
-				},
-				{
-					"field": "accessDate"
 				},
 				{
 					"field": "rights"
@@ -156,13 +171,22 @@
 					"primary": true
 				},
 				{
-					"creatorType": "contributor"
+					"creatorType": "creator"
+				},
+				{
+					"creatorType": "originalCreator"
 				},
 				{
 					"creatorType": "composer"
 				},
 				{
 					"creatorType": "wordsBy"
+				},
+				{
+					"creatorType": "translator"
+				},
+				{
+					"creatorType": "contributor"
 				}
 			]
 		},
@@ -207,7 +231,10 @@
 					"field": "date"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -217,6 +244,9 @@
 				},
 				{
 					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -259,16 +289,25 @@
 					"field": "date"
 				},
 				{
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
+				},
+				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
 				},
 				{
-					"field": "language"
+					"field": "ISSN"
 				},
 				{
 					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -281,6 +320,9 @@
 				{
 					"creatorType": "author",
 					"primary": true
+				},
+				{
+					"creatorType": "translator"
 				},
 				{
 					"creatorType": "commenter"
@@ -315,25 +357,38 @@
 					"field": "edition"
 				},
 				{
-					"field": "place"
+					"field": "date"
 				},
 				{
 					"field": "publisher"
 				},
 				{
-					"field": "date"
+					"field": "place"
+				},
+				{
+					"field": "originalDate"
+				},
+				{
+					"field": "originalPublisher"
+				},
+				{
+					"field": "originalPlace"
+				},
+				{
+					"field": "format",
+					"baseField": "medium"
 				},
 				{
 					"field": "numPages"
 				},
 				{
-					"field": "language"
-				},
-				{
 					"field": "ISBN"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -342,10 +397,19 @@
 					"field": "accessDate"
 				},
 				{
+					"field": "ISSN"
+				},
+				{
 					"field": "archive"
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -408,25 +472,38 @@
 					"field": "edition"
 				},
 				{
-					"field": "place"
+					"field": "date"
 				},
 				{
 					"field": "publisher"
 				},
 				{
-					"field": "date"
+					"field": "place"
+				},
+				{
+					"field": "originalDate"
+				},
+				{
+					"field": "originalPublisher"
+				},
+				{
+					"field": "originalPlace"
+				},
+				{
+					"field": "format",
+					"baseField": "medium"
 				},
 				{
 					"field": "pages"
 				},
 				{
-					"field": "language"
-				},
-				{
 					"field": "ISBN"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -435,10 +512,19 @@
 					"field": "accessDate"
 				},
 				{
+					"field": "ISSN"
+				},
+				{
 					"field": "archive"
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -512,16 +598,22 @@
 					"field": "history"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -565,26 +657,32 @@
 					"field": "system"
 				},
 				{
-					"field": "place"
-				},
-				{
 					"field": "company",
 					"baseField": "publisher"
+				},
+				{
+					"field": "place"
 				},
 				{
 					"field": "programmingLanguage"
 				},
 				{
-					"field": "ISBN"
+					"field": "rights"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
 				},
 				{
-					"field": "rights"
+					"field": "accessDate"
+				},
+				{
+					"field": "DOI"
+				},
+				{
+					"field": "ISBN"
 				},
 				{
 					"field": "archive"
@@ -599,7 +697,7 @@
 					"field": "callNumber"
 				},
 				{
-					"field": "accessDate"
+					"field": "shortTitle"
 				},
 				{
 					"field": "extra"
@@ -625,9 +723,6 @@
 					"field": "abstractNote"
 				},
 				{
-					"field": "date"
-				},
-				{
 					"field": "proceedingsTitle",
 					"baseField": "publicationTitle"
 				},
@@ -635,10 +730,13 @@
 					"field": "conferenceName"
 				},
 				{
+					"field": "publisher"
+				},
+				{
 					"field": "place"
 				},
 				{
-					"field": "publisher"
+					"field": "date"
 				},
 				{
 					"field": "volume"
@@ -650,16 +748,13 @@
 					"field": "series"
 				},
 				{
-					"field": "language"
-				},
-				{
 					"field": "DOI"
 				},
 				{
 					"field": "ISBN"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -668,10 +763,19 @@
 					"field": "accessDate"
 				},
 				{
+					"field": "ISSN"
+				},
+				{
 					"field": "archive"
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -815,25 +919,25 @@
 					"field": "edition"
 				},
 				{
-					"field": "place"
+					"field": "date"
 				},
 				{
 					"field": "publisher"
 				},
 				{
-					"field": "date"
+					"field": "place"
 				},
 				{
 					"field": "pages"
 				},
 				{
-					"field": "language"
-				},
-				{
 					"field": "ISBN"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -846,6 +950,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -889,16 +999,22 @@
 					"field": "abstractNote"
 				},
 				{
-					"field": "publisher"
+					"field": "type"
 				},
 				{
 					"field": "date"
 				},
 				{
-					"field": "language"
+					"field": "publisher"
 				},
 				{
-					"field": "shortTitle"
+					"field": "place"
+				},
+				{
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -911,6 +1027,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -958,13 +1080,19 @@
 					"field": "date"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "shortTitle"
 				},
 				{
 					"field": "language"
@@ -980,6 +1108,9 @@
 				{
 					"creatorType": "author",
 					"primary": true
+				},
+				{
+					"creatorType": "translator"
 				},
 				{
 					"creatorType": "contributor"
@@ -1018,13 +1149,13 @@
 					"field": "edition"
 				},
 				{
-					"field": "place"
+					"field": "date"
 				},
 				{
 					"field": "publisher"
 				},
 				{
-					"field": "date"
+					"field": "place"
 				},
 				{
 					"field": "pages"
@@ -1033,7 +1164,10 @@
 					"field": "ISBN"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1042,13 +1176,16 @@
 					"field": "accessDate"
 				},
 				{
-					"field": "language"
-				},
-				{
 					"field": "archive"
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -1096,6 +1233,9 @@
 					"baseField": "publisher"
 				},
 				{
+					"field": "place"
+				},
+				{
 					"field": "date"
 				},
 				{
@@ -1110,10 +1250,10 @@
 					"field": "runningTime"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1126,6 +1266,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -1146,13 +1292,28 @@
 					"primary": true
 				},
 				{
-					"creatorType": "contributor"
+					"creatorType": "producer"
 				},
 				{
 					"creatorType": "scriptwriter"
 				},
 				{
-					"creatorType": "producer"
+					"creatorType": "castMember"
+				},
+				{
+					"creatorType": "host"
+				},
+				{
+					"creatorType": "guest"
+				},
+				{
+					"creatorType": "narrator"
+				},
+				{
+					"creatorType": "translator"
+				},
+				{
+					"creatorType": "contributor"
 				}
 			]
 		},
@@ -1177,16 +1338,22 @@
 					"field": "date"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -1218,9 +1385,6 @@
 					"field": "committee"
 				},
 				{
-					"field": "place"
-				},
-				{
 					"field": "publisher"
 				},
 				{
@@ -1247,16 +1411,25 @@
 					"field": "date"
 				},
 				{
-					"field": "language"
+					"field": "eventPlace"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -1285,16 +1458,22 @@
 					"field": "date"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -1326,17 +1505,23 @@
 					"field": "abstractNote"
 				},
 				{
-					"field": "date"
-				},
-				{
 					"field": "interviewMedium",
 					"baseField": "medium"
 				},
 				{
-					"field": "language"
+					"field": "date"
 				},
 				{
-					"field": "shortTitle"
+					"field": "publisher"
+				},
+				{
+					"field": "place"
+				},
+				{
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1349,6 +1534,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -1392,16 +1583,31 @@
 					"field": "publicationTitle"
 				},
 				{
+					"field": "publisher"
+				},
+				{
+					"field": "place"
+				},
+				{
+					"field": "date"
+				},
+				{
 					"field": "volume"
 				},
 				{
 					"field": "issue"
 				},
 				{
-					"field": "pages"
+					"field": "section"
 				},
 				{
-					"field": "date"
+					"field": "partNumber"
+				},
+				{
+					"field": "partTitle"
+				},
+				{
+					"field": "pages"
 				},
 				{
 					"field": "series"
@@ -1416,16 +1622,10 @@
 					"field": "journalAbbreviation"
 				},
 				{
-					"field": "language"
-				},
-				{
 					"field": "DOI"
 				},
 				{
-					"field": "ISSN"
-				},
-				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1434,10 +1634,28 @@
 					"field": "accessDate"
 				},
 				{
+					"field": "PMID"
+				},
+				{
+					"field": "PMCID"
+				},
+				{
+					"field": "arXivID"
+				},
+				{
+					"field": "ISSN"
+				},
+				{
 					"field": "archive"
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -1488,10 +1706,13 @@
 					"field": "date"
 				},
 				{
-					"field": "language"
+					"field": "eventPlace"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1504,6 +1725,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -1524,10 +1751,13 @@
 					"primary": true
 				},
 				{
+					"creatorType": "recipient"
+				},
+				{
 					"creatorType": "contributor"
 				},
 				{
-					"creatorType": "recipient"
+					"creatorType": "translator"
 				}
 			]
 		},
@@ -1544,25 +1774,31 @@
 					"field": "publicationTitle"
 				},
 				{
+					"field": "publisher"
+				},
+				{
+					"field": "place"
+				},
+				{
+					"field": "date"
+				},
+				{
 					"field": "volume"
 				},
 				{
 					"field": "issue"
 				},
 				{
-					"field": "date"
-				},
-				{
 					"field": "pages"
-				},
-				{
-					"field": "language"
 				},
 				{
 					"field": "ISSN"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1575,6 +1811,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -1619,6 +1861,10 @@
 					"baseField": "type"
 				},
 				{
+					"field": "institution",
+					"baseField": "publisher"
+				},
+				{
 					"field": "place"
 				},
 				{
@@ -1628,10 +1874,13 @@
 					"field": "numPages"
 				},
 				{
-					"field": "language"
+					"field": "number"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1644,6 +1893,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -1694,22 +1949,22 @@
 					"field": "edition"
 				},
 				{
-					"field": "place"
+					"field": "publisher"
 				},
 				{
-					"field": "publisher"
+					"field": "place"
 				},
 				{
 					"field": "date"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
 					"field": "ISBN"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1722,6 +1977,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -1762,13 +2023,22 @@
 					"field": "publicationTitle"
 				},
 				{
+					"field": "publisher"
+				},
+				{
 					"field": "place"
 				},
 				{
-					"field": "edition"
+					"field": "date"
 				},
 				{
-					"field": "date"
+					"field": "volume"
+				},
+				{
+					"field": "issue"
+				},
+				{
+					"field": "edition"
 				},
 				{
 					"field": "section"
@@ -1777,13 +2047,13 @@
 					"field": "pages"
 				},
 				{
-					"field": "language"
-				},
-				{
-					"field": "shortTitle"
-				},
-				{
 					"field": "ISSN"
+				},
+				{
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1796,6 +2066,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -1874,6 +2150,10 @@
 					"baseField": "date"
 				},
 				{
+					"field": "priorityDate",
+					"baseField": "originalDate"
+				},
+				{
 					"field": "references"
 				},
 				{
@@ -1881,16 +2161,22 @@
 					"baseField": "status"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -1936,7 +2222,19 @@
 					"field": "date"
 				},
 				{
+					"field": "publisher"
+				},
+				{
+					"field": "place"
+				},
+				{
 					"field": "runningTime"
+				},
+				{
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -1945,10 +2243,10 @@
 					"field": "accessDate"
 				},
 				{
-					"field": "language"
+					"field": "shortTitle"
 				},
 				{
-					"field": "shortTitle"
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -1963,10 +2261,31 @@
 					"primary": true
 				},
 				{
-					"creatorType": "contributor"
+					"creatorType": "guest"
 				},
 				{
-					"creatorType": "guest"
+					"creatorType": "producer"
+				},
+				{
+					"creatorType": "executiveProducer"
+				},
+				{
+					"creatorType": "seriesCreator"
+				},
+				{
+					"creatorType": "director"
+				},
+				{
+					"creatorType": "scriptwriter"
+				},
+				{
+					"creatorType": "castMember"
+				},
+				{
+					"creatorType": "translator"
+				},
+				{
+					"creatorType": "contributor"
 				}
 			]
 		},
@@ -2076,10 +2395,23 @@
 					"field": "date"
 				},
 				{
-					"field": "place"
+					"field": "meetingName"
 				},
 				{
-					"field": "meetingName"
+					"field": "eventPlace"
+				},
+				{
+					"field": "series"
+				},
+				{
+					"field": "sessionTitle",
+					"baseField": "publicationTitle"
+				},
+				{
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -2088,10 +2420,10 @@
 					"field": "accessDate"
 				},
 				{
-					"field": "language"
+					"field": "shortTitle"
 				},
 				{
-					"field": "shortTitle"
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -2106,7 +2438,16 @@
 					"primary": true
 				},
 				{
+					"creatorType": "chair"
+				},
+				{
+					"creatorType": "organizer"
+				},
+				{
 					"creatorType": "contributor"
+				},
+				{
+					"creatorType": "translator"
 				}
 			]
 		},
@@ -2132,11 +2473,11 @@
 					"baseField": "medium"
 				},
 				{
-					"field": "place"
-				},
-				{
 					"field": "network",
 					"baseField": "publisher"
+				},
+				{
+					"field": "place"
 				},
 				{
 					"field": "date"
@@ -2145,10 +2486,10 @@
 					"field": "runningTime"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -2161,6 +2502,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -2177,23 +2524,38 @@
 			],
 			"creatorTypes": [
 				{
-					"creatorType": "director",
+					"creatorType": "creator",
 					"primary": true
 				},
 				{
-					"creatorType": "scriptwriter"
+					"creatorType": "host"
+				},
+				{
+					"creatorType": "guest"
 				},
 				{
 					"creatorType": "producer"
 				},
 				{
+					"creatorType": "executiveProducer"
+				},
+				{
+					"creatorType": "seriesCreator"
+				},
+				{
+					"creatorType": "director"
+				},
+				{
+					"creatorType": "scriptwriter"
+				},
+				{
 					"creatorType": "castMember"
 				},
 				{
-					"creatorType": "contributor"
+					"creatorType": "translator"
 				},
 				{
-					"creatorType": "guest"
+					"creatorType": "contributor"
 				}
 			]
 		},
@@ -2215,26 +2577,32 @@
 					"baseField": "type"
 				},
 				{
-					"field": "seriesTitle"
+					"field": "institution",
+					"baseField": "publisher"
 				},
 				{
 					"field": "place"
 				},
 				{
-					"field": "institution",
-					"baseField": "publisher"
+					"field": "date"
 				},
 				{
-					"field": "date"
+					"field": "seriesTitle"
+				},
+				{
+					"field": "seriesNumber"
 				},
 				{
 					"field": "pages"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "ISBN"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -2243,10 +2611,19 @@
 					"field": "accessDate"
 				},
 				{
+					"field": "ISSN"
+				},
+				{
 					"field": "archive"
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -2265,6 +2642,9 @@
 				{
 					"creatorType": "author",
 					"primary": true
+				},
+				{
+					"creatorType": "editor"
 				},
 				{
 					"creatorType": "contributor"
@@ -2401,16 +2781,22 @@
 					"field": "history"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "rights"
@@ -2453,13 +2839,22 @@
 					"field": "date"
 				},
 				{
+					"field": "series"
+				},
+				{
+					"field": "seriesNumber"
+				},
+				{
 					"field": "numPages"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "ISBN"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -2468,10 +2863,19 @@
 					"field": "accessDate"
 				},
 				{
+					"field": "ISSN"
+				},
+				{
 					"field": "archive"
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -2518,11 +2922,11 @@
 					"baseField": "medium"
 				},
 				{
-					"field": "place"
-				},
-				{
 					"field": "network",
 					"baseField": "publisher"
+				},
+				{
+					"field": "place"
 				},
 				{
 					"field": "date"
@@ -2531,10 +2935,10 @@
 					"field": "runningTime"
 				},
 				{
-					"field": "language"
+					"field": "DOI"
 				},
 				{
-					"field": "shortTitle"
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -2547,6 +2951,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -2567,19 +2977,34 @@
 					"primary": true
 				},
 				{
-					"creatorType": "scriptwriter"
+					"creatorType": "producer"
 				},
 				{
-					"creatorType": "producer"
+					"creatorType": "executiveProducer"
+				},
+				{
+					"creatorType": "seriesCreator"
+				},
+				{
+					"creatorType": "scriptwriter"
 				},
 				{
 					"creatorType": "castMember"
 				},
 				{
-					"creatorType": "contributor"
+					"creatorType": "host"
 				},
 				{
 					"creatorType": "guest"
+				},
+				{
+					"creatorType": "narrator"
+				},
+				{
+					"creatorType": "translator"
+				},
+				{
+					"creatorType": "contributor"
 				}
 			]
 		},
@@ -2606,11 +3031,11 @@
 					"field": "numberOfVolumes"
 				},
 				{
-					"field": "place"
-				},
-				{
 					"field": "studio",
 					"baseField": "publisher"
+				},
+				{
+					"field": "place"
 				},
 				{
 					"field": "date"
@@ -2619,13 +3044,13 @@
 					"field": "runningTime"
 				},
 				{
-					"field": "language"
-				},
-				{
 					"field": "ISBN"
 				},
 				{
-					"field": "shortTitle"
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
@@ -2638,6 +3063,12 @@
 				},
 				{
 					"field": "archiveLocation"
+				},
+				{
+					"field": "shortTitle"
+				},
+				{
+					"field": "language"
 				},
 				{
 					"field": "libraryCatalog"
@@ -2654,17 +3085,38 @@
 			],
 			"creatorTypes": [
 				{
-					"creatorType": "director",
+					"creatorType": "uploader",
 					"primary": true
 				},
 				{
-					"creatorType": "scriptwriter"
+					"creatorType": "creator"
+				},
+				{
+					"creatorType": "director"
 				},
 				{
 					"creatorType": "producer"
 				},
 				{
+					"creatorType": "scriptwriter"
+				},
+				{
+					"creatorType": "executiveProducer"
+				},
+				{
 					"creatorType": "castMember"
+				},
+				{
+					"creatorType": "host"
+				},
+				{
+					"creatorType": "guest"
+				},
+				{
+					"creatorType": "narrator"
+				},
+				{
+					"creatorType": "translator"
 				},
 				{
 					"creatorType": "contributor"
@@ -2692,13 +3144,25 @@
 					"field": "date"
 				},
 				{
-					"field": "shortTitle"
+					"field": "publisher"
+				},
+				{
+					"field": "place"
+				},
+				{
+					"field": "DOI"
+				},
+				{
+					"field": "citationKey"
 				},
 				{
 					"field": "url"
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "shortTitle"
 				},
 				{
 					"field": "language"
@@ -2861,6 +3325,9 @@
 				"chapter-number": [
 					"session"
 				],
+				"citation-key": [
+					"citationKey"
+				],
 				"collection-number": [
 					"seriesNumber"
 				],
@@ -2929,8 +3396,20 @@
 				"number-of-volumes": [
 					"numberOfVolumes"
 				],
+				"part-number": [
+					"partNumber"
+				],
+				"part-title": [
+					"partTitle"
+				],
 				"page": [
 					"pages"
+				],
+				"PMID": [
+					"PMID"
+				],
+				"PMCID": [
+					"PMCID"
 				],
 				"publisher": [
 					"publisher"
@@ -2984,17 +3463,25 @@
 		"names": {
 			"author": "author",
 			"bookAuthor": "container-author",
+			"chair": "chair",
 			"castMember": "performer",
 			"composer": "composer",
 			"contributor": "contributor",
+			"creator": "author",
 			"director": "director",
 			"editor": "editor",
+			"executiveProducer": "executive-producer",
 			"guest": "guest",
+			"host": "host",
 			"interviewer": "interviewer",
+			"narrator": "narrator",
+			"originalCreator": "original-author",
+			"organizer": "organizer",
 			"podcaster": "host",
 			"producer": "producer",
 			"recipient": "recipient",
 			"reviewedAuthor": "reviewed-author",
+			"seriesCreator": "series-creator",
 			"seriesEditor": "collection-editor",
 			"scriptwriter": "script-writer",
 			"translator": "translator"
