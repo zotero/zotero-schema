@@ -145,7 +145,27 @@ function getLocalizedStrings(locale, strings, prefix, subjects) {
 	var data = {};
 	for (let subject of subjects) {
 		let key = prefix + '.' + subject;
-		if (!strings.has(key)) {
+		let value;
+		
+		// Use hard-coded versions of identifiers that shouldn't be localized
+		switch (subject) {
+			case 'arXivID':
+				value = 'arXiv ID';
+				break;
+			
+			case 'DOI':
+			case 'ISBN':
+			case 'ISSN':
+			case 'PMID':
+			case 'PMCID':
+				value = subject;
+				break;
+			
+			default:
+				value = strings.get(key);
+		}
+		
+		if (!value) {
 			// 'type' is only a base field, so it doesn't have a string
 			if (key == 'itemFields.type') {
 				continue;
