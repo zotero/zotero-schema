@@ -2398,7 +2398,7 @@
 					"field": "meetingName"
 				},
 				{
-					"field": "eventPlace"
+					"field": "place"
 				},
 				{
 					"field": "series"
