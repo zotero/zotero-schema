@@ -1411,7 +1411,7 @@
 					"field": "date"
 				},
 				{
-					"field": "eventPlace"
+					"field": "place"
 				},
 				{
 					"field": "DOI"
