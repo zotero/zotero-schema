@@ -132,8 +132,6 @@ async function run() {
 	var newJSON = JSON.stringify(data, null, '\t') + "\n";
 	if (oldJSON != newJSON) {
 		console.log("Schema updated");
-		data.version = version + 1;
-		newJSON = JSON.stringify(data, null, '\t') + "\n"
 		fs.writeFileSync('schema.json', newJSON);
 	}
 	else {
