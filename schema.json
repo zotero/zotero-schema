@@ -2677,6 +2677,9 @@
 					"field": "versionNumber"
 				},
 				{
+					"field": "edition"
+				},
+				{
 					"field": "status"
 				},
 				{
@@ -2687,6 +2690,15 @@
 				},
 				{
 					"field": "place"
+				},
+				{
+					"field": "partNumber"
+				},
+				{
+					"field": "partTitle"
+				},
+				{
+					"field": "ISBN"
 				},
 				{
 					"field": "DOI"
@@ -2732,6 +2744,9 @@
 				{
 					"creatorType": "author",
 					"primary": true
+				},
+				{
+					"creatorType": "editor"
 				},
 				{
 					"creatorType": "contributor"
