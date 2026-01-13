@@ -3342,7 +3342,7 @@
 					"edition"
 				],
 				"event-place": [
-					"place"
+					"eventPlace"
 				],
 				"event-title": [
 					"meetingName",
