@@ -3387,9 +3387,6 @@
 				"number-of-volumes": [
 					"numberOfVolumes"
 				],
-				"original-date": [
-					"originalDate"
-				],
 				"original-publisher": [
 					"originalPublisher"
 				],
@@ -3457,7 +3454,8 @@
 			"date": {
 				"accessed": "accessDate",
 				"issued": "date",
-				"submitted": "filingDate"
+				"submitted": "filingDate",
+				"original-date": "originalDate"
 			}
 		},
 		"names": {
