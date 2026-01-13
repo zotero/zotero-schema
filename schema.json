@@ -736,13 +736,25 @@
 					"field": "date"
 				},
 				{
+					"field": "eventPlace"
+				},
+				{
 					"field": "volume"
+				},
+				{
+					"field": "issue"
+				},
+				{
+					"field": "numberOfVolumes"
 				},
 				{
 					"field": "pages"
 				},
 				{
 					"field": "series"
+				},
+				{
+					"field": "seriesNumber"
 				},
 				{
 					"field": "DOI"
