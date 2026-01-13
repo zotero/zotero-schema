@@ -3387,6 +3387,15 @@
 				"number-of-volumes": [
 					"numberOfVolumes"
 				],
+				"original-date": [
+					"originalDate"
+				],
+				"original-publisher": [
+					"originalPublisher"
+				],
+				"original-publisher-place": [
+					"originalPlace"
+				],
 				"part-number": [
 					"partNumber"
 				],
