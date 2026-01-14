@@ -955,6 +955,9 @@
 					"field": "accessDate"
 				},
 				{
+					"field": "ISSN"
+				},
+				{
 					"field": "archive"
 				},
 				{
@@ -1183,6 +1186,9 @@
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "ISSN"
 				},
 				{
 					"field": "archive"
@@ -1798,9 +1804,6 @@
 					"field": "pages"
 				},
 				{
-					"field": "ISSN"
-				},
-				{
 					"field": "DOI"
 				},
 				{
@@ -1811,6 +1814,9 @@
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "ISSN"
 				},
 				{
 					"field": "archive"
@@ -2053,9 +2059,6 @@
 					"field": "pages"
 				},
 				{
-					"field": "ISSN"
-				},
-				{
 					"field": "DOI"
 				},
 				{
@@ -2066,6 +2069,9 @@
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "ISSN"
 				},
 				{
 					"field": "archive"
@@ -2723,6 +2729,9 @@
 				},
 				{
 					"field": "accessDate"
+				},
+				{
+					"field": "ISSN"
 				},
 				{
 					"field": "archive"
