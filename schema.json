@@ -16,6 +16,9 @@
 					"field": "abstractNote"
 				},
 				{
+					"field": "type"
+				},
+				{
 					"field": "artworkMedium",
 					"baseField": "medium"
 				},
@@ -98,6 +101,9 @@
 				},
 				{
 					"field": "abstractNote"
+				},
+				{
+					"field": "type"
 				},
 				{
 					"field": "audioRecordingFormat",
@@ -197,6 +203,9 @@
 					"field": "abstractNote"
 				},
 				{
+					"field": "type"
+				},
+				{
 					"field": "billNumber",
 					"baseField": "number"
 				},
@@ -275,6 +284,9 @@
 					"field": "abstractNote"
 				},
 				{
+					"field": "type"
+				},
+				{
 					"field": "blogTitle",
 					"baseField": "publicationTitle"
 				},
@@ -337,6 +349,9 @@
 				},
 				{
 					"field": "abstractNote"
+				},
+				{
+					"field": "type"
 				},
 				{
 					"field": "series"
@@ -448,6 +463,9 @@
 				},
 				{
 					"field": "abstractNote"
+				},
+				{
+					"field": "type"
 				},
 				{
 					"field": "bookTitle",
@@ -720,6 +738,9 @@
 					"field": "abstractNote"
 				},
 				{
+					"field": "type"
+				},
+				{
 					"field": "proceedingsTitle",
 					"baseField": "publicationTitle"
 				},
@@ -828,11 +849,11 @@
 					"field": "abstractNote"
 				},
 				{
-					"field": "identifier",
-					"baseField": "number"
+					"field": "type"
 				},
 				{
-					"field": "type"
+					"field": "identifier",
+					"baseField": "number"
 				},
 				{
 					"field": "versionNumber"
@@ -1086,6 +1107,9 @@
 					"field": "abstractNote"
 				},
 				{
+					"field": "type"
+				},
+				{
 					"field": "date"
 				},
 				{
@@ -1238,6 +1262,10 @@
 					"field": "abstractNote"
 				},
 				{
+					"field": "genre",
+					"baseField": "type"
+				},
+				{
 					"field": "distributor",
 					"baseField": "publisher"
 				},
@@ -1246,10 +1274,6 @@
 				},
 				{
 					"field": "date"
-				},
-				{
-					"field": "genre",
-					"baseField": "type"
 				},
 				{
 					"field": "videoRecordingFormat",
@@ -1336,12 +1360,12 @@
 					"field": "abstractNote"
 				},
 				{
-					"field": "forumTitle",
-					"baseField": "publicationTitle"
-				},
-				{
 					"field": "postType",
 					"baseField": "type"
+				},
+				{
+					"field": "forumTitle",
+					"baseField": "publicationTitle"
 				},
 				{
 					"field": "date"
@@ -1464,6 +1488,9 @@
 					"field": "abstractNote"
 				},
 				{
+					"field": "type"
+				},
+				{
 					"field": "date"
 				},
 				{
@@ -1512,6 +1539,9 @@
 				},
 				{
 					"field": "abstractNote"
+				},
+				{
+					"field": "type"
 				},
 				{
 					"field": "interviewMedium",
@@ -1587,6 +1617,9 @@
 				},
 				{
 					"field": "abstractNote"
+				},
+				{
+					"field": "type"
 				},
 				{
 					"field": "publicationTitle"
@@ -1775,6 +1808,9 @@
 				},
 				{
 					"field": "abstractNote"
+				},
+				{
+					"field": "type"
 				},
 				{
 					"field": "publicationTitle"
@@ -2026,6 +2062,9 @@
 					"field": "abstractNote"
 				},
 				{
+					"field": "type"
+				},
+				{
 					"field": "publicationTitle"
 				},
 				{
@@ -2212,6 +2251,9 @@
 				},
 				{
 					"field": "abstractNote"
+				},
+				{
+					"field": "type"
 				},
 				{
 					"field": "seriesTitle"
@@ -2467,6 +2509,9 @@
 					"field": "abstractNote"
 				},
 				{
+					"field": "type"
+				},
+				{
 					"field": "programTitle",
 					"baseField": "publicationTitle"
 				},
@@ -2575,12 +2620,12 @@
 					"field": "abstractNote"
 				},
 				{
-					"field": "reportNumber",
-					"baseField": "number"
-				},
-				{
 					"field": "reportType",
 					"baseField": "type"
+				},
+				{
+					"field": "reportNumber",
+					"baseField": "number"
 				},
 				{
 					"field": "institution",
@@ -2931,6 +2976,9 @@
 					"field": "abstractNote"
 				},
 				{
+					"field": "type"
+				},
+				{
 					"field": "programTitle",
 					"baseField": "publicationTitle"
 				},
@@ -3037,6 +3085,9 @@
 				},
 				{
 					"field": "abstractNote"
+				},
+				{
+					"field": "type"
 				},
 				{
 					"field": "videoRecordingFormat",
@@ -3151,12 +3202,12 @@
 					"field": "abstractNote"
 				},
 				{
-					"field": "websiteTitle",
-					"baseField": "publicationTitle"
-				},
-				{
 					"field": "websiteType",
 					"baseField": "type"
+				},
+				{
+					"field": "websiteTitle",
+					"baseField": "publicationTitle"
 				},
 				{
 					"field": "date"
