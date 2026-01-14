@@ -180,6 +180,9 @@
 					"creatorType": "wordsBy"
 				},
 				{
+					"creatorType": "narrator"
+				},
+				{
 					"creatorType": "translator"
 				},
 				{
@@ -433,6 +436,9 @@
 					"creatorType": "editor"
 				},
 				{
+					"creatorType": "narrator"
+				},
+				{
 					"creatorType": "translator"
 				},
 				{
@@ -549,6 +555,9 @@
 				},
 				{
 					"creatorType": "bookAuthor"
+				},
+				{
+					"creatorType": "narrator"
 				},
 				{
 					"creatorType": "translator"
@@ -2286,6 +2295,9 @@
 				},
 				{
 					"creatorType": "castMember"
+				},
+				{
+					"creatorType": "narrator"
 				},
 				{
 					"creatorType": "translator"
