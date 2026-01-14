@@ -284,15 +284,12 @@
 					"field": "abstractNote"
 				},
 				{
-					"field": "type"
+					"field": "websiteType",
+					"baseField": "type"
 				},
 				{
 					"field": "blogTitle",
 					"baseField": "publicationTitle"
-				},
-				{
-					"field": "websiteType",
-					"baseField": "type"
 				},
 				{
 					"field": "date"
