@@ -436,6 +436,9 @@
 					"creatorType": "translator"
 				},
 				{
+					"creatorType": "illustrator"
+				},
+				{
 					"creatorType": "seriesEditor"
 				}
 			]
@@ -552,6 +555,9 @@
 				},
 				{
 					"creatorType": "translator"
+				},
+				{
+					"creatorType": "illustrator"
 				},
 				{
 					"creatorType": "seriesEditor"
@@ -3498,6 +3504,7 @@
 			"executiveProducer": "executive-producer",
 			"guest": "guest",
 			"host": "host",
+			"illustrator": "illustrator",
 			"interviewer": "interviewer",
 			"narrator": "narrator",
 			"originalCreator": "original-author",
