@@ -1619,6 +1619,10 @@
 					"field": "pages"
 				},
 				{
+					"field": "identifier",
+					"baseField": "number"
+				},
+				{
 					"field": "series"
 				},
 				{
