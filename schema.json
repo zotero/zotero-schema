@@ -3201,6 +3201,9 @@
 					"creatorType": "contributor"
 				},
 				{
+					"creatorType": "editor"
+				},
+				{
 					"creatorType": "translator"
 				}
 			]
