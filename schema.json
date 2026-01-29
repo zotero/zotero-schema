@@ -551,6 +551,9 @@
 					"creatorType": "bookAuthor"
 				},
 				{
+					"creatorType": "interviewer"
+				},
+				{
 					"creatorType": "translator"
 				},
 				{
@@ -1688,6 +1691,9 @@
 					"creatorType": "editor"
 				},
 				{
+					"creatorType": "interviewer"
+				},
+				{
 					"creatorType": "translator"
 				},
 				{
@@ -1844,6 +1850,9 @@
 				},
 				{
 					"creatorType": "contributor"
+				},
+				{
+					"creatorType": "interviewer"
 				},
 				{
 					"creatorType": "translator"
@@ -2101,6 +2110,9 @@
 					"creatorType": "contributor"
 				},
 				{
+					"creatorType": "interviewer"
+				},
+				{
 					"creatorType": "translator"
 				},
 				{
@@ -2268,6 +2280,9 @@
 				},
 				{
 					"creatorType": "guest"
+				},
+				{
+					"creatorType": "interviewer"
 				},
 				{
 					"creatorType": "producer"
@@ -2538,6 +2553,9 @@
 				},
 				{
 					"creatorType": "guest"
+				},
+				{
+					"creatorType": "interviewer"
 				},
 				{
 					"creatorType": "producer"
@@ -3019,6 +3037,9 @@
 					"creatorType": "guest"
 				},
 				{
+					"creatorType": "interviewer"
+				},
+				{
 					"creatorType": "narrator"
 				},
 				{
@@ -3199,6 +3220,9 @@
 				},
 				{
 					"creatorType": "contributor"
+				},
+				{
+					"creatorType": "interviewer"
 				},
 				{
 					"creatorType": "translator"
