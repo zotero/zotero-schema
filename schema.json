@@ -1,5 +1,5 @@
 {
-	"version": 44,
+	"version": 45,
 	"itemTypes": [
 		{
 			"itemType": "annotation",
@@ -3212,6 +3212,9 @@
 				"type": "date"
 			},
 			"filingDate": {
+				"type": "date"
+			},
+			"originalDate": {
 				"type": "date"
 			}
 		}
