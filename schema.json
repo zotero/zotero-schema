@@ -286,6 +286,12 @@
 					"field": "date"
 				},
 				{
+					"field": "publisher"
+				},
+				{
+					"field": "place"
+				},
+				{
 					"field": "DOI"
 				},
 				{
