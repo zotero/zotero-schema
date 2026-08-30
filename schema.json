@@ -23,6 +23,9 @@
 					"field": "artworkSize"
 				},
 				{
+					"field": "status"
+				},
+				{
 					"field": "date"
 				},
 				{
@@ -118,6 +121,9 @@
 				},
 				{
 					"field": "place"
+				},
+				{
+					"field": "status"
 				},
 				{
 					"field": "date"
@@ -225,6 +231,9 @@
 					"field": "history"
 				},
 				{
+					"field": "status"
+				},
+				{
 					"field": "date"
 				},
 				{
@@ -281,6 +290,9 @@
 				{
 					"field": "websiteType",
 					"baseField": "type"
+				},
+				{
+					"field": "status"
 				},
 				{
 					"field": "date"
@@ -352,6 +364,9 @@
 				},
 				{
 					"field": "edition"
+				},
+				{
+					"field": "status"
 				},
 				{
 					"field": "date"
@@ -467,6 +482,9 @@
 				},
 				{
 					"field": "edition"
+				},
+				{
+					"field": "status"
 				},
 				{
 					"field": "date"
@@ -648,6 +666,9 @@
 					"field": "versionNumber"
 				},
 				{
+					"field": "status"
+				},
+				{
 					"field": "date"
 				},
 				{
@@ -731,6 +752,9 @@
 				},
 				{
 					"field": "place"
+				},
+				{
+					"field": "status"
 				},
 				{
 					"field": "date"
@@ -838,6 +862,9 @@
 					"field": "versionNumber"
 				},
 				{
+					"field": "status"
+				},
+				{
 					"field": "date"
 				},
 				{
@@ -928,6 +955,9 @@
 					"field": "edition"
 				},
 				{
+					"field": "status"
+				},
+				{
 					"field": "date"
 				},
 				{
@@ -1009,6 +1039,9 @@
 				},
 				{
 					"field": "type"
+				},
+				{
+					"field": "status"
 				},
 				{
 					"field": "date"
@@ -1158,6 +1191,9 @@
 					"field": "edition"
 				},
 				{
+					"field": "status"
+				},
+				{
 					"field": "date"
 				},
 				{
@@ -1243,6 +1279,9 @@
 				},
 				{
 					"field": "place"
+				},
+				{
+					"field": "status"
 				},
 				{
 					"field": "date"
@@ -1342,6 +1381,9 @@
 				{
 					"field": "postType",
 					"baseField": "type"
+				},
+				{
+					"field": "status"
 				},
 				{
 					"field": "date"
@@ -1518,6 +1560,9 @@
 					"baseField": "medium"
 				},
 				{
+					"field": "status"
+				},
+				{
 					"field": "date"
 				},
 				{
@@ -1596,6 +1641,9 @@
 				},
 				{
 					"field": "place"
+				},
+				{
+					"field": "status"
 				},
 				{
 					"field": "date"
@@ -1786,6 +1834,9 @@
 					"field": "place"
 				},
 				{
+					"field": "status"
+				},
+				{
 					"field": "date"
 				},
 				{
@@ -1872,6 +1923,9 @@
 				},
 				{
 					"field": "place"
+				},
+				{
+					"field": "status"
 				},
 				{
 					"field": "date"
@@ -1961,6 +2015,9 @@
 					"field": "place"
 				},
 				{
+					"field": "status"
+				},
+				{
 					"field": "date"
 				},
 				{
@@ -2033,6 +2090,9 @@
 				},
 				{
 					"field": "place"
+				},
+				{
+					"field": "status"
 				},
 				{
 					"field": "date"
@@ -2152,6 +2212,10 @@
 					"field": "priorityNumbers"
 				},
 				{
+					"field": "legalStatus",
+					"baseField": "status"
+				},
+				{
 					"field": "issueDate",
 					"baseField": "date"
 				},
@@ -2161,10 +2225,6 @@
 				},
 				{
 					"field": "references"
-				},
-				{
-					"field": "legalStatus",
-					"baseField": "status"
 				},
 				{
 					"field": "DOI"
@@ -2223,6 +2283,9 @@
 				{
 					"field": "audioFileType",
 					"baseField": "medium"
+				},
+				{
+					"field": "status"
 				},
 				{
 					"field": "date"
@@ -2320,6 +2383,9 @@
 					"field": "place"
 				},
 				{
+					"field": "status"
+				},
+				{
 					"field": "date"
 				},
 				{
@@ -2396,6 +2462,9 @@
 				{
 					"field": "presentationType",
 					"baseField": "type"
+				},
+				{
+					"field": "status"
 				},
 				{
 					"field": "date"
@@ -2484,6 +2553,9 @@
 				},
 				{
 					"field": "place"
+				},
+				{
+					"field": "status"
 				},
 				{
 					"field": "date"
@@ -2588,6 +2660,9 @@
 				},
 				{
 					"field": "place"
+				},
+				{
+					"field": "status"
 				},
 				{
 					"field": "date"
@@ -2786,6 +2861,9 @@
 					"baseField": "number"
 				},
 				{
+					"field": "status"
+				},
+				{
 					"field": "dateEnacted",
 					"baseField": "date"
 				},
@@ -2855,6 +2933,9 @@
 				},
 				{
 					"field": "place"
+				},
+				{
+					"field": "status"
 				},
 				{
 					"field": "date"
@@ -2948,6 +3029,9 @@
 				},
 				{
 					"field": "place"
+				},
+				{
+					"field": "status"
 				},
 				{
 					"field": "date"
@@ -3059,6 +3143,9 @@
 					"field": "place"
 				},
 				{
+					"field": "status"
+				},
+				{
 					"field": "date"
 				},
 				{
@@ -3157,6 +3244,9 @@
 				{
 					"field": "websiteType",
 					"baseField": "type"
+				},
+				{
+					"field": "status"
 				},
 				{
 					"field": "date"
