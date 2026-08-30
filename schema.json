@@ -2264,6 +2264,7 @@
 			"creatorTypes": [
 				{
 					"creatorType": "podcaster",
+					"baseField": "host",
 					"primary": true
 				},
 				{
@@ -3505,7 +3506,6 @@
 			"narrator": "narrator",
 			"originalCreator": "original-author",
 			"organizer": "organizer",
-			"podcaster": "host",
 			"producer": "producer",
 			"recipient": "recipient",
 			"reviewedAuthor": "reviewed-author",
